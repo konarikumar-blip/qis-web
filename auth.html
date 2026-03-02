@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QIS CET — Portal Access</title>
+  <link rel="stylesheet" href="auth.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="noise-layer"></div>
+
+<div class="auth-shell">
+
+  <!-- LEFT PANEL -->
+  <div class="auth-left">
+    <div class="al-grid-bg"></div>
+    <div class="al-geo g1"></div>
+    <div class="al-geo g2"></div>
+
+    <div class="al-content">
+      <a href="index.html" class="al-brand">
+        <div class="al-logo">QIS</div>
+        <div>
+          <span class="al-name">QIS College of Engineering</span>
+          <span class="al-sub">// ONGOLE · ANDHRA PRADESH</span>
+        </div>
+      </a>
+
+      <div class="al-headline">
+        <h1>
+          <span class="alh-out">ACCESS</span>
+          <span class="alh-solid">THE</span>
+          <span class="alh-out">PORTAL</span>
+        </h1>
+        <p>Sign in to manage your academic journey, track placements, and stay connected with QIS.</p>
+      </div>
+
+      <div class="al-stats">
+        <div class="als"><span class="als-v">5000+</span><span class="als-k">Students</span></div>
+        <div class="als-div">|</div>
+        <div class="als"><span class="als-v">95%</span><span class="als-k">Placement</span></div>
+        <div class="als-div">|</div>
+        <div class="als"><span class="als-v">20YRS</span><span class="als-k">Legacy</span></div>
+      </div>
+    </div>
+
+    <!-- Real campus photo at bottom of left panel -->
+    <div class="al-campus-strip">
+      <img src="qis.webp" alt="QIS Campus" class="al-campus-img"/>
+      <div class="al-strip-overlay">
+        <span class="al-strip-dot"></span>
+        QIS CAMPUS — ONGOLE, AP
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL — FORMS -->
+  <div class="auth-right">
+    <a href="index.html" class="ar-back">&larr; BACK TO SITE</a>
+
+    <!-- TAB SWITCHER -->
+    <div class="auth-tabs">
+      <button class="atab active" id="tabSignin" onclick="switchTab('signin')">SIGN IN</button>
+      <button class="atab" id="tabSignup" onclick="switchTab('signup')">REGISTER</button>
+    </div>
+
+    <!-- SIGN IN FORM -->
+    <div class="auth-form-wrap" id="formSignin">
+      <div class="af-hd">
+        <span class="af-tag">// AUTH_MODULE_01</span>
+        <h2>SIGN_IN( )</h2>
+        <p>Access your QIS student portal</p>
+      </div>
+
+      <form id="signinForm" class="af-form" novalidate>
+        <div class="af-field">
+          <label>EMAIL <span class="af-req">*</span></label>
+          <div class="af-input-wrap">
+            <span class="af-icon">@</span>
+            <input type="email" id="siEmail" placeholder="student@qiscet.edu.in" required/>
+          </div>
+        </div>
+        <div class="af-field">
+          <label>PASSWORD <span class="af-req">*</span></label>
+          <div class="af-input-wrap">
+            <span class="af-icon">🔒</span>
+            <input type="password" id="siPassword" placeholder="Enter password" required/>
+            <button type="button" class="af-eye" id="siEye" onclick="togglePwd('siPassword','siEye')">SHOW</button>
+          </div>
+        </div>
+        <div class="af-options">
+          <label class="af-check"><input type="checkbox"/><span>REMEMBER_ME</span></label>
+          <a href="#" class="af-forgot">FORGOT_PWD?</a>
+        </div>
+        <button type="submit" class="af-btn">LOGIN ▶</button>
+        <div class="af-error" id="siError"></div>
+      </form>
+
+      <div class="af-demo">
+        <div class="afd-hd">DEMO CREDENTIALS</div>
+        <div class="afd-row"><span>Student:</span><code>student@qiscet.edu.in / qis2024</code></div>
+        <div class="afd-row"><span>Admin:</span><code>admin@qiscet.edu.in / admin2024</code></div>
+      </div>
+    </div>
+
+    <!-- REGISTER FORM -->
+    <div class="auth-form-wrap hidden" id="formSignup">
+      <div class="af-hd">
+        <span class="af-tag">// AUTH_MODULE_02</span>
+        <h2>REGISTER( )</h2>
+        <p>Create your QIS student account</p>
+      </div>
+
+      <form id="signupForm" class="af-form" novalidate>
+        <div class="af-row2">
+          <div class="af-field">
+            <label>FIRST NAME <span class="af-req">*</span></label>
+            <input type="text" placeholder="First" required/>
+          </div>
+          <div class="af-field">
+            <label>LAST NAME <span class="af-req">*</span></label>
+            <input type="text" placeholder="Last" required/>
+          </div>
+        </div>
+        <div class="af-field">
+          <label>EMAIL <span class="af-req">*</span></label>
+          <div class="af-input-wrap">
+            <span class="af-icon">@</span>
+            <input type="email" placeholder="your@email.com" required/>
+          </div>
+        </div>
+        <div class="af-field">
+          <label>HALL TICKET / ID</label>
+          <input type="text" placeholder="e.g. 21A91A0501"/>
+        </div>
+        <div class="af-field">
+          <label>DEPARTMENT</label>
+          <select>
+            <option value="">Select department...</option>
+            <option>Computer Science & Engineering</option>
+            <option>Electronics & Communication Engg.</option>
+            <option>Electrical & Electronics Engg.</option>
+            <option>Mechanical Engineering</option>
+            <option>Civil Engineering</option>
+            <option>Information Technology</option>
+          </select>
+        </div>
+        <div class="af-field">
+          <label>PASSWORD <span class="af-req">*</span></label>
+          <div class="af-input-wrap">
+            <span class="af-icon">🔒</span>
+            <input type="password" id="suPassword" placeholder="Min. 8 characters" required/>
+            <button type="button" class="af-eye" id="suEye" onclick="togglePwd('suPassword','suEye')">SHOW</button>
+          </div>
+        </div>
+        <div class="af-field">
+          <label>CONFIRM PASSWORD <span class="af-req">*</span></label>
+          <input type="password" id="suConfirm" placeholder="Repeat password" required/>
+        </div>
+        <button type="submit" class="af-btn">CREATE ACCOUNT ▶</button>
+        <div class="af-error" id="suError"></div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>

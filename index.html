@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QIS CET — Engineering Tomorrow</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="noise-layer"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-wrap">
+    <a href="#home" class="brand">
+      <div class="brand-box">QIS</div>
+      <div class="brand-info">
+        <span class="brand-full">COLLEGE OF ENGINEERING &amp; TECHNOLOGY</span>
+        <span class="brand-loc">// ONGOLE · ANDHRA PRADESH</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"      class="nl" data-n="01">Home</a></li>
+      <li><a href="#about"     class="nl" data-n="02">About</a></li>
+      <li><a href="#academics" class="nl" data-n="03">Academics</a></li>
+      <li><a href="#placement" class="nl" data-n="04">Placement</a></li>
+      <li><a href="#contact"   class="nl" data-n="05">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="auth.html" class="cta-signin">[ SIGN_IN ]</a>
+      <a href="auth.html#signup" class="cta-apply">APPLY NOW &#9654;</a>
+    </div>
+    <button class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>AICTE APPROVED</span><span>&#9670;</span>
+      <span>JNTUK AFFILIATED</span><span>&#9670;</span>
+      <span>NAAC ACCREDITED</span><span>&#9670;</span>
+      <span>EST. 2004</span><span>&#9670;</span>
+      <span>95% PLACEMENT</span><span>&#9670;</span>
+      <span>5000+ STUDENTS</span><span>&#9670;</span>
+      <span>30 ACRE CAMPUS</span><span>&#9670;</span>
+      <span>200+ FACULTY</span><span>&#9670;</span>
+      <span>ONGOLE, ANDHRA PRADESH</span><span>&#9670;</span>
+      <span>AICTE APPROVED</span><span>&#9670;</span>
+      <span>JNTUK AFFILIATED</span><span>&#9670;</span>
+      <span>NAAC ACCREDITED</span><span>&#9670;</span>
+      <span>EST. 2004</span><span>&#9670;</span>
+      <span>95% PLACEMENT</span><span>&#9670;</span>
+      <span>5000+ STUDENTS</span><span>&#9670;</span>
+      <span>30 ACRE CAMPUS</span><span>&#9670;</span>
+      <span>200+ FACULTY</span><span>&#9670;</span>
+      <span>ONGOLE, ANDHRA PRADESH</span><span>&#9670;</span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-geo g1"></div>
+  <div class="hero-geo g2"></div>
+  <div class="hero-inner">
+
+    <!-- Left: Headline -->
+    <div class="hero-text">
+      <p class="hero-eyebrow">// EST_2004 · ONGOLE · AP · JNTUK</p>
+      <h1 class="hero-h1">
+        <span class="h1-outline">ENGINEER</span>
+        <span class="h1-solid">THE</span>
+        <span class="h1-outline">FUTURE</span>
+      </h1>
+      <p class="hero-sub">
+        QIS College of Engineering &amp; Technology — where cutting-edge curriculum meets real-world innovation. 20 years of transforming ambition into achievement.
+      </p>
+      <div class="hero-btns">
+        <a href="auth.html#signup" class="hbtn-fill">APPLY NOW &#9654;</a>
+        <a href="#about" class="hbtn-line">EXPLORE &#8595;</a>
+      </div>
+    </div>
+
+    <!-- Right: REAL Campus Photo -->
+    <div class="hero-photo-side">
+      <div class="photo-frame">
+        <span class="fc top-left"></span>
+        <span class="fc top-right"></span>
+        <span class="fc bot-left"></span>
+        <span class="fc bot-right"></span>
+        <img src="qis.webp" alt="QIS College of Engineering and Technology — Ongole Campus" class="campus-photo"/>
+        <div class="photo-scan"></div>
+        <div class="photo-vignette"></div>
+        <div class="photo-badge">
+          <span class="badge-pulse"></span>
+          QIS CAMPUS · ONGOLE, AP
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Stats bar -->
+  <div class="hero-stats">
+    <div class="hs-item"><span class="hs-num" data-to="5000">0</span><span class="hs-suf">+</span><span class="hs-lbl">STUDENTS</span></div>
+    <div class="hs-sep">|</div>
+    <div class="hs-item"><span class="hs-num" data-to="200">0</span><span class="hs-suf">+</span><span class="hs-lbl">FACULTY</span></div>
+    <div class="hs-sep">|</div>
+    <div class="hs-item"><span class="hs-num" data-to="95">0</span><span class="hs-suf">%</span><span class="hs-lbl">PLACEMENT</span></div>
+    <div class="hs-sep">|</div>
+    <div class="hs-item"><span class="hs-num" data-to="20">0</span><span class="hs-suf">YRS</span><span class="hs-lbl">LEGACY</span></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about-sec" id="about">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-tag">// SECTION_02</span>
+      <h2 class="sec-title">ABOUT <em>QIS CET</em></h2>
+      <div class="sec-bar"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p class="about-lead">Founded in 2004, QIS College of Engineering and Technology is a premier technical institution in Ongole, Prakasam District, Andhra Pradesh.</p>
+        <p class="about-body">Approved by <strong>AICTE</strong> and affiliated to <strong>JNTUK</strong>, QIS has built an outstanding reputation for academic excellence, industry integration, and holistic student development over two decades.</p>
+        <p class="about-body">Our sprawling 30-acre campus houses 30+ state-of-the-art laboratories, a central library with <strong>50,000+ volumes</strong>, smart classrooms, sports facilities, and hostels — everything a future engineer needs to thrive.</p>
+        <div class="about-chips">
+          <span>NAAC ACCREDITED</span><span>ISO 9001:2015</span><span>AICTE APPROVED</span>
+          <span>JNTUK AFFILIATED</span><span>NBA CERTIFIED DEPTS</span><span>30-ACRE CAMPUS</span>
+        </div>
+      </div>
+      <div class="about-stats-box">
+        <div class="asb-grid">
+          <div class="asb-item"><span class="asb-num">50K<sup>+</sup></span><span class="asb-lbl">Library Volumes</span><div class="asb-line"></div></div>
+          <div class="asb-item"><span class="asb-num">30<sup>+</sup></span><span class="asb-lbl">Laboratories</span><div class="asb-line"></div></div>
+          <div class="asb-item"><span class="asb-num">50<sup>+</sup></span><span class="asb-lbl">Industry MoUs</span><div class="asb-line"></div></div>
+          <div class="asb-item"><span class="asb-num">8<sup>+</sup></span><span class="asb-lbl">Departments</span><div class="asb-line"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FULL-WIDTH REAL CAMPUS BANNER -->
+    <div class="campus-banner">
+      <div class="cb-frame">
+        <img src="qis.webp" alt="QIS College of Engineering and Technology Campus — Ongole, Andhra Pradesh" class="cb-img"/>
+        <div class="cb-overlay">
+          <div class="cb-scanlines"></div>
+          <div class="cb-vignette"></div>
+          <span class="cb-corner c-tl"></span>
+          <span class="cb-corner c-tr"></span>
+          <span class="cb-corner c-bl"></span>
+          <span class="cb-corner c-br"></span>
+          <div class="cb-labels">
+            <div class="cb-label-left"><span class="cb-dot"></span>QIS COLLEGE OF ENGINEERING &amp; TECHNOLOGY — ONGOLE CAMPUS</div>
+            <div class="cb-label-right">EST. 2004 · 30 ACRES</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ACADEMICS -->
+<section class="section dark-sec academics-sec" id="academics">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-tag">// SECTION_03</span>
+      <h2 class="sec-title">ACADE<em>MICS</em></h2>
+      <div class="sec-bar"></div>
+    </div>
+    <p class="sec-sub">Programs engineered for the demands of the modern world.</p>
+    <div class="prog-list">
+      <div class="prog-row"><span class="pr-idx">01</span><div class="pr-body"><h3>B.Tech Computer Science &amp; Engineering</h3><p>AI · Cloud Computing · Cybersecurity · Full-Stack Dev</p></div><div class="pr-tags"><span>B.TECH</span><span>4 YRS</span><span>120 SEATS</span></div><span class="pr-arr">→</span></div>
+      <div class="prog-row"><span class="pr-idx">02</span><div class="pr-body"><h3>B.Tech Electronics &amp; Communication Engg.</h3><p>VLSI · Embedded Systems · IoT · Signal Processing</p></div><div class="pr-tags"><span>B.TECH</span><span>4 YRS</span><span>60 SEATS</span></div><span class="pr-arr">→</span></div>
+      <div class="prog-row"><span class="pr-idx">03</span><div class="pr-body"><h3>B.Tech Electrical &amp; Electronics Engg.</h3><p>Power Systems · Control Systems · Renewable Energy</p></div><div class="pr-tags"><span>B.TECH</span><span>4 YRS</span><span>60 SEATS</span></div><span class="pr-arr">→</span></div>
+      <div class="prog-row"><span class="pr-idx">04</span><div class="pr-body"><h3>B.Tech Mechanical Engineering</h3><p>CAD/CAM · Robotics · Thermodynamics · Manufacturing</p></div><div class="pr-tags"><span>B.TECH</span><span>4 YRS</span><span>60 SEATS</span></div><span class="pr-arr">→</span></div>
+      <div class="prog-row"><span class="pr-idx">05</span><div class="pr-body"><h3>B.Tech Civil Engineering</h3><p>Structural Analysis · Geotechnics · Transportation</p></div><div class="pr-tags"><span>B.TECH</span><span>4 YRS</span><span>60 SEATS</span></div><span class="pr-arr">→</span></div>
+      <div class="prog-row"><span class="pr-idx">06</span><div class="pr-body"><h3>B.Tech Information Technology</h3><p>Software Engineering · Networks · Databases</p></div><div class="pr-tags"><span>B.TECH</span><span>4 YRS</span><span>60 SEATS</span></div><span class="pr-arr">→</span></div>
+      <div class="prog-row"><span class="pr-idx">07</span><div class="pr-body"><h3>M.Tech Computer Science</h3><p>Machine Learning · HPC · Distributed Systems</p></div><div class="pr-tags"><span>M.TECH</span><span>2 YRS</span><span>18 SEATS</span></div><span class="pr-arr">→</span></div>
+      <div class="prog-row"><span class="pr-idx">08</span><div class="pr-body"><h3>MBA Technology Management</h3><p>Tech Leadership · Product Management · Finance</p></div><div class="pr-tags"><span>MBA</span><span>2 YRS</span><span>60 SEATS</span></div><span class="pr-arr">→</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLACEMENT -->
+<section class="section placement-sec" id="placement">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-tag">// SECTION_04</span>
+      <h2 class="sec-title">PLACE<em>MENT</em></h2>
+      <div class="sec-bar"></div>
+    </div>
+    <div class="place-layout">
+      <div class="place-left">
+        <div class="big-pct"><span class="bp-num">95</span><span class="bp-sym">%</span><span class="bp-sub">PLACEMENT RATE — BATCH 2024</span></div>
+        <div class="place-row-stats">
+          <div class="prs"><span class="prs-v">&#8377;6.8L</span><span class="prs-k">AVG PACKAGE</span></div>
+          <div class="prs"><span class="prs-v">&#8377;24L</span><span class="prs-k">HIGHEST CTC</span></div>
+          <div class="prs"><span class="prs-v">150+</span><span class="prs-k">COMPANIES</span></div>
+        </div>
+        <div class="place-features">
+          <div class="pf"><span class="pf-ic">[→]</span><div><strong>Year-round Training</strong><p>Aptitude, coding, GD, mock interviews every semester.</p></div></div>
+          <div class="pf"><span class="pf-ic">[→]</span><div><strong>150+ Campus Drives</strong><p>Top companies visit campus each academic year.</p></div></div>
+          <div class="pf"><span class="pf-ic">[→]</span><div><strong>Industry Mentorship</strong><p>Active professionals guide students toward career goals.</p></div></div>
+        </div>
+      </div>
+      <div class="place-right">
+        <p class="recruiter-hd">TOP_RECRUITERS.exe</p>
+        <div class="recruiter-grid">
+          <span>TCS</span><span>WIPRO</span><span>INFOSYS</span><span>HCL</span>
+          <span>COGNIZANT</span><span>ACCENTURE</span><span>IBM</span><span>CAPGEMINI</span>
+          <span>DELOITTE</span><span>TECH MAHINDRA</span><span>L&amp;T</span><span>DRDO</span>
+          <span>BHEL</span><span>NTT DATA</span><span>MPHASIS</span><span>MINDTREE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section dark-sec contact-sec" id="contact">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-tag">// SECTION_05</span>
+      <h2 class="sec-title">CONT<em>ACT</em></h2>
+      <div class="sec-bar"></div>
+    </div>
+    <div class="contact-layout">
+      <form class="contact-form" id="contactForm">
+        <div class="cform-hd">SEND_MESSAGE( )</div>
+        <div class="cform-row">
+          <div class="cfield"><label>NAME <span class="req">*</span></label><input type="text" placeholder="Your full name" required/></div>
+          <div class="cfield"><label>EMAIL <span class="req">*</span></label><input type="email" placeholder="your@email.com" required/></div>
+        </div>
+        <div class="cfield"><label>SUBJECT</label><input type="text" placeholder="Admission / General Inquiry..."/></div>
+        <div class="cfield"><label>MESSAGE <span class="req">*</span></label><textarea rows="5" placeholder="Type your message..." required></textarea></div>
+        <button type="submit" class="cform-btn">TRANSMIT →</button>
+      </form>
+      <div class="contact-info">
+        <div class="ci-hd">LOCATION_DATA.txt</div>
+        <div class="ci-row"><span class="ci-k">ADDR:</span><span class="ci-v">QIS CET, Ongole – 523272<br/>Prakasam Dt, Andhra Pradesh</span></div>
+        <div class="ci-row"><span class="ci-k">CALL:</span><span class="ci-v">+91 8592 123456<br/>+91 8592 654321</span></div>
+        <div class="ci-row"><span class="ci-k">MAIL:</span><span class="ci-v">admissions@qiscet.edu.in<br/>principal@qiscet.edu.in</span></div>
+        <div class="ci-row"><span class="ci-k">HRS:</span><span class="ci-v">Mon–Sat 09:00 → 17:00<br/>Sun: CLOSED</span></div>
+        <div class="map-box"><div class="map-grid-bg"></div><span class="map-pin">&#9678; QIS CET — ONGOLE</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="fb-box">QIS</div>
+      <div><strong>QIS COLLEGE OF ENGINEERING &amp; TECHNOLOGY</strong><span>ONGOLE · ANDHRA PRADESH · EST. 2004</span></div>
+    </div>
+    <p class="footer-copy">&copy; 2024 QIS CET · AICTE APPROVED · JNTUK AFFILIATED · ALL RIGHTS RESERVED</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
